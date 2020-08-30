@@ -1,7 +1,7 @@
 {
   "name": "tree-practice",
   "version": "1.0.0",
-  "description": "Binary tree practice in Javascript based on Ruby version at https://github.com/Ada-C13/tree-practice",
+  "description": "Binary search tree practice in Javascript based on Ruby version at https://github.com/Ada-C13/tree-practice",
   "main": "index.js",
   "directories": {
     "lib": "lib",

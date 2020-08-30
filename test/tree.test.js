@@ -19,6 +19,7 @@ describe("Tree", () => {
         treeWithNodes.add(1, "Mary");
         treeWithNodes.add(10, "Karla");
         treeWithNodes.add(15, "Ada");
+        treeWithNodes.add(25, "Kari");
     });
 
     it("can find and add values", () => {
@@ -76,13 +77,13 @@ describe("Tree", () => {
     });
 
 
-    describe.skip("breadth first search", () => {
+    describe("breadth first search", () => {
         it("will give an empty array for an empty tree", () => {
             expect(tree.bfs()).toEqual([]);
         });
 
         it("will return an array of a level-by-level output of the tree", () => {
-            expect(treeWithNodes.postorder()).toEqual([
+            expect(treeWithNodes.bfs()).toEqual([
                 { key: 5, value: "Peter" }, { key: 3, value: "Paul" },
                 { key: 10, value: "Karla" }, { key: 1, value: "Mary" },
                 { key: 15, value: "Ada" }, { key: 25, value: "Kari" }]);
